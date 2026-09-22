@@ -67,202 +67,300 @@ export interface SiteConfig {
 }
 
 export const siteConfig: SiteConfig = {
-  // TODO: replace with your name
-  name: "Alex Morgan",
-  role: "Senior Software Engineer",
+  name: "Kanchana Walagambahu",
+  role: "Senior Software Engineer – Frontend",
   tagline:
-    "Specialised in React, Next.js and TypeScript — building precise, accessible product interfaces for UK and remote teams.",
-  location: "London, United Kingdom (Remote-friendly)",
-  // TODO: replace with your email
-  email: "hello@example.com",
-  // TODO: replace with path to your CV, e.g. "/cv.pdf"
+    "4+ years building scalable React and Next.js products — mentoring teams, shaping frontend architecture, and shipping enterprise SaaS with care.",
+  location: "Colombo, Sri Lanka (Remote-friendly)",
+  email: "sachithrakanchana.ks@gmail.com",
+  phone: "+94771556815",
   cvUrl: "/cv.pdf",
-  // TODO: replace with your photo path under /public, or leave undefined
   photoUrl: undefined,
   showPhoto: false,
-  availability: "Available for permanent roles and select contract engagements across the UK and remote.",
+  availability:
+    "Open to senior frontend and tech-lead opportunities — remote or hybrid.",
   bio: [
-    "I am a Senior Software Engineer with a frontend focus, specialising in React, Next.js and TypeScript. I care about clear information architecture, accessible interfaces and maintainable component systems that product and engineering teams can ship against with confidence.",
-    "Over the past several years I have led interface work for product-led organisations — from design-system foundations and performance-sensitive dashboards through to AI-assisted tools used daily by operators and customers. I favour understated craft over novelty: readable code, measured motion and interfaces that recruiters and users alike can navigate without friction.",
-    "I work comfortably with product managers, designers and backend engineers, and I am equally at home reviewing pull requests, shaping technical programmes of work, or rolling my sleeves up in the codebase.",
+    "I am a Senior Software Engineer and emerging Tech Lead with 4+ years of experience delivering scalable React and Next.js applications for enterprise SaaS products. I drive end-to-end feature delivery — from facilitating product feasibility discussions and translating requirements into structured developer guides, to coordinating parallel FE/BE workstreams that fast-track releases without compromising quality.",
+    "I have mentored engineering teams, led internal tech talks, architected modular frontend systems, and implemented performance and caching solutions that reduce costs and improve user experience. I am adept at bridging Product, Design, QA, and Engineering to ship the right thing, fast.",
+    "Alongside day-job work at Axiata Digital Labs, I ship personal products such as jsonshare.org and the open-source doodleui-react library, and I contribute to full-stack platforms like Wildwood Packiyo for Tribird.",
   ],
   socialLinks: [
     {
       label: "LinkedIn",
-      // TODO: replace with your LinkedIn URL
-      url: "https://www.linkedin.com/in/your-profile",
+      url: "https://www.linkedin.com/in/connectskw/",
       icon: "Linkedin",
     },
     {
       label: "GitHub",
-      // TODO: replace with your GitHub URL
-      url: "https://github.com/your-username",
+      url: "https://github.com/KanchanaSW",
       icon: "Github",
-    },
-    {
-      label: "X",
-      // TODO: replace with your X/Twitter URL
-      url: "https://x.com/your-handle",
-      icon: "Twitter",
     },
   ],
   experience: [
     {
-      company: "Northbridge Digital",
-      role: "Senior Software Engineer (Frontend)",
-      location: "London, UK · Hybrid",
-      startDate: "2023-06",
+      company: "Axiata Digital Labs",
+      role: "Senior Software Engineer",
+      location: "Colombo, Sri Lanka",
+      startDate: "2022-10",
       endDate: "Present",
       summary:
-        "Lead frontend engineer for a B2B SaaS platform serving regulated UK organisations, owning the React/Next.js application layer and shared UI kit.",
+        "Promoted from Software Engineer (Oct 2022 – Mar 2025) to Senior Software Engineer (Mar 2025 – Present). Own frontend delivery across Axonect and SmartNas products — architecture, mentoring, performance, and cross-team coordination.",
       highlights: [
-        "Led a redesign of the core product shell in Next.js App Router, reducing median interaction latency by ~35% and improving Lighthouse accessibility scores to the mid-90s.",
-        "Established a typed design-system programme (Radix + Tailwind) adopted by three product squads, cutting duplicate UI work and review cycles.",
-        "Partnered with design and compliance to ship WCAG 2.2 AA-aligned flows for high-stakes customer onboarding.",
+        "Conducted technical feasibility discussions with Product and UI/UX before sprint planning, reducing mid-sprint rework across feature releases.",
+        "Resolved a critical performance bottleneck by decomposing a monolithic API into fine-grained endpoints and adding CMS-driven dynamic TTL caching — cutting API costs and speeding up data-heavy screens.",
+        "Facilitated feature kickoffs with Business, then translated outcomes into structured implementation guides (build steps, developer testing checklists, QA handoff) — zero rework, minimal bugs, on-time releases.",
+        "Fast-tracked a time-sensitive business feature by parallelising FE/BE development with mocked APIs, staged QA handoffs, and progressive integration — delivered on schedule without compromising quality.",
+        "Delivered an internal tech talk, “Exploring the Future of Coding with Cursor AI”, with a live demo that drove team-wide adoption of AI-assisted development.",
+        "Mentored juniors and interns through weekly 1:1s, PR reviews, and coding standards — improving PR cycle time and reducing post-merge defects.",
+        "Co-led frontend architecture for the Axonect Enterprise Product Catalog, introducing a modular component strategy that reduced UI duplication and accelerated delivery.",
+        "Resolved 20+ critical frontend bugs across Axonect products; diagnosed SmartNas Android Crashlytics issues; integrated Adjust SDK funnel events; cleared SonarQube quality-gate findings.",
       ],
-      techStack: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Radix UI", "GraphQL"],
+      techStack: [
+        "React",
+        "TypeScript",
+        "Ant Design",
+        "SCSS",
+        "Android",
+        "Kotlin",
+        "Firebase",
+        "SonarQube",
+      ],
     },
     {
-      company: "Harbour Labs",
-      role: "Software Engineer",
-      location: "Remote · UK",
-      startDate: "2020-09",
-      endDate: "2023-05",
-      summary:
-        "Full-stack leaning frontend engineer on a multi-tenant analytics product used by mid-market UK retailers.",
-      highlights: [
-        "Owned the customer-facing dashboard rewrite in React and TypeScript, introducing code-splitting and virtualised tables for large datasets.",
-        "Introduced Storybook and visual regression checks that halved UI-related production incidents year-on-year.",
-        "Mentored two mid-level engineers and chaired fortnightly frontend guild sessions on performance and accessibility.",
-      ],
-      techStack: ["React", "TypeScript", "Node.js", "PostgreSQL", "AWS", "Storybook"],
-    },
-    {
-      company: "Brightform Studio",
+      company: "Tribird",
       role: "Frontend Developer",
-      location: "Manchester, UK",
-      startDate: "2018-01",
-      endDate: "2020-08",
+      location: "Norway · Part-time, Remote",
+      startDate: "2025-03",
+      endDate: "2025-08",
       summary:
-        "Built marketing sites and lightweight web applications for agencies and early-stage startups.",
+        "Part-time remote frontend engineer building Wildwood Packiyo — a full-stack inventory and packaging management platform for Tribird’s Norway operations.",
       highlights: [
-        "Delivered 20+ client projects in React and modern CSS, with a focus on responsive layout and clean component APIs.",
-        "Standardised a shared component library that reduced average project kick-off time by roughly a week.",
+        "Engineered Wildwood Packiyo with Next.js 15, React 19, TypeScript, and Tailwind CSS for real-time inventory tracking and streamlined order workflows.",
+        "Integrated GraphQL with React Query and Zustand for type-safe fetching, optimistic updates, and intelligent caching on high-traffic screens.",
+        "Built interactive dashboards and data tables (Recharts, React Table) with advanced filtering, bulk operations, and real-time updates.",
+        "Leveraged Next.js SSR, dynamic routing, and code splitting to improve SEO and reduce initial page load times.",
       ],
-      techStack: ["React", "JavaScript", "Sass", "Webpack", "Netlify"],
+      techStack: [
+        "Next.js",
+        "React",
+        "TypeScript",
+        "Tailwind CSS",
+        "GraphQL",
+        "React Query",
+        "Zustand",
+      ],
+    },
+    {
+      company: "Informatics International",
+      role: "Associate Software Engineer",
+      location: "Colombo, Sri Lanka",
+      startDate: "2022-03",
+      endDate: "2022-10",
+      summary:
+        "Built enterprise product UIs in React and TypeScript, partnering with UX and backend in Agile sprints.",
+      highlights: [
+        "Developed user interfaces using React, TypeScript, Material UI, and Redux with design consistency and cross-browser compatibility.",
+        "Partnered with 2 UX designers and backend teams to define API contracts and component specs before development.",
+        "Optimised Redux state management and resolved 10+ front-end issues, improving usability and reducing reported UI defects.",
+      ],
+      techStack: ["React", "TypeScript", "Material UI", "Redux"],
     },
   ],
   projects: [
     {
+      slug: "json-vibe",
+      title: "JSON Vibe",
+      description:
+        "A production-ready, shareable JSON editor with real-time validation, format conversion, and ERD-style schema visualisation — live at jsonshare.org.",
+      longDescription:
+        "Built with a zero-backend architecture: client-side encryption, URL-based state with LZ-String compression, JSONPath filtering, diff viewer, and a data model generator for 6+ languages. Fully responsive with QR code sharing and Web Share API integration.",
+      techStack: [
+        "Next.js 14",
+        "React",
+        "TypeScript",
+        "Tailwind CSS",
+        "CodeMirror 6",
+        "React Flow",
+        "Web Crypto API",
+        "LZ-String",
+      ],
+      liveUrl: "https://jsonshare.org",
+      featured: true,
+      status: "shipped",
+    },
+    {
       slug: "doodleui-react",
       title: "doodleui-react",
       description:
-        "A hand-drawn, sketch-style React component library published on npm, with an accompanying documentation site for designers and engineers.",
+        "Open-source sketch-styled React component library (55+ components) with CLI, theming, dark mode, and an MCP server for AI coding agents.",
       longDescription:
-        "doodleui-react provides accessible, Radix-backed primitives styled with a distinctive hand-drawn aesthetic. Built for teams that want character without sacrificing keyboard support or TypeScript ergonomics.",
-      techStack: ["React", "TypeScript", "Radix UI"],
-      // TODO: replace with live docs URL if available
-      liveUrl: "https://example.com/doodleui",
-      // TODO: replace with repository URL
-      repoUrl: "https://github.com/your-username/doodleui-react",
-      // TODO: replace with npm package URL
+        "Built on Radix with WCAG 2.1 AA contrast auditing. Ships a shadcn-style CLI (npx doodleui-react add …) that copies component source into consumer apps across npm/pnpm/yarn/bun, plus an MCP server so agents can discover components, read prop docs, and install correctly.",
+      techStack: [
+        "TypeScript",
+        "React 18+",
+        "rough.js",
+        "Radix UI",
+        "Framer Motion",
+        "Next.js",
+        "Turborepo",
+        "pnpm",
+        "MCP",
+        "Netlify",
+      ],
+      liveUrl: "https://doodle-ui.netlify.app/",
+      repoUrl: "https://github.com/KanchanaSW/doodle-ui",
       npmUrl: "https://www.npmjs.com/package/doodleui-react",
       featured: true,
       status: "shipped",
     },
     {
-      slug: "jsonshare",
-      title: "jsonshare.org",
+      slug: "wildwood-packiyo",
+      title: "Wildwood Packiyo",
       description:
-        "A JSON sharing and mock API tool with OCR and AI vision — the project I reach for most days when prototyping or debugging payloads.",
+        "Full-stack inventory and packaging management platform for Tribird’s Norway operations — real-time tracking, dashboards, and bulk workflows.",
       longDescription:
-        "jsonshare.org lets you paste, share and mock JSON endpoints quickly, with optional OCR and vision models to extract structured data from screenshots and documents.",
-      techStack: ["Next.js", "Groq"],
-      // TODO: replace with live URL
-      liveUrl: "https://jsonshare.org",
-      // TODO: replace with repository URL
-      repoUrl: "https://github.com/your-username/jsonshare",
+        "Features real-time data updates, advanced dashboard reporting, and bulk operations for business users. Built with GraphQL, shadcn/ui, React Hook Form, and Framer Motion.",
+      techStack: [
+        "Next.js",
+        "React",
+        "GraphQL",
+        "shadcn/ui",
+        "React Hook Form",
+        "Tailwind CSS",
+        "TypeScript",
+        "Framer Motion",
+      ],
       featured: true,
       status: "shipped",
     },
     {
-      slug: "zolo",
-      title: "Zolo",
+      slug: "smartnas",
+      title: "SmartNas",
       description:
-        "An AI-powered multilingual gift concierge for e-commerce, supporting English, Sinhala, Tamil and Tanglish voice input.",
+        "Android application for Smart Axiata — Home 4.0, 5G journeys, multi-account, Crashlytics, and Adjust attribution analytics.",
       longDescription:
-        "Zolo helps shoppers discover gifts through natural conversation and voice, routing intent through Vercel AI SDK and Gemini across multiple languages used by Sri Lankan and diaspora customers.",
-      techStack: ["Next.js", "Vercel AI SDK", "Gemini"],
-      // TODO: replace with live URL
-      liveUrl: "https://example.com/zolo",
-      // TODO: replace with repository URL
-      repoUrl: "https://github.com/your-username/zolo",
-      featured: true,
-      status: "shipped",
-    },
-    {
-      slug: "geography-video-generator",
-      title: "Geography Video Generator",
-      description:
-        "A tool that converts written scripts into animated geography explainer videos for educational content.",
-      techStack: ["Next.js", "Three.js", "Remotion"],
-      // TODO: replace with repository URL
-      repoUrl: "https://github.com/your-username/geography-video-generator",
+        "Built and maintained with Kotlin and MVP architecture. Led Home 4.0 customisable layout and plans/usage; built 5G prepaid/postpaid/hybrid flows with coverage map and Dynamic Links; multi-account add/switch/sign-out with AuthInterceptor 401 session recovery.",
+      techStack: [
+        "Android",
+        "Kotlin",
+        "XML",
+        "Firebase",
+        "Retrofit",
+        "MVP",
+        "Material Design",
+        "Dagger",
+        "Glide",
+        "OkHttp",
+        "SonarQube",
+      ],
       featured: false,
-      status: "in-progress",
+      status: "shipped",
+    },
+    {
+      slug: "smartnas-revamp",
+      title: "SmartNas Revamp",
+      description:
+        "Flutter revamp of SmartNas — in-app notifications, FCM push, Adjust product events, and Crashlytics.",
+      longDescription:
+        "Delivered the in-app notification list and announcement detail sheets, mark-as-read, unread badge on the home bell, and FCM push (device token, Firebase Android/iOS setup). Integrated Adjust product events (login, SmartVIP, plans, notifications, Smart Roam) and environment tokens.",
+      techStack: [
+        "Flutter",
+        "Dart",
+        "Firebase FCM",
+        "Firebase Crashlytics",
+        "Adjust Events",
+      ],
+      featured: false,
+      status: "shipped",
+    },
+    {
+      slug: "axonect-customer-explore",
+      title: "Axonect Customer Explore",
+      description:
+        "RnD UI for user management, trouble tickets, and self-onboarding workflows on the Axonect platform.",
+      longDescription:
+        "Implemented User Management with full CRUD, role assignment, and granular permissions; Trouble Ticket Management with complete CRUD; and a self-onboarding workflow that reduced administrative overhead.",
+      techStack: ["React", "TypeScript", "Ant Design", "SCSS", "CSS"],
+      featured: false,
+      status: "shipped",
+    },
+    {
+      slug: "axonect-enterprise-product-catalog",
+      title: "Axonect Enterprise Product Catalog",
+      description:
+        "RnD product catalog UI with federation, canvas-based drag-and-drop product design, and RBAC.",
+      longDescription:
+        "Implemented product federation for BSS/OSS integration, a canvas UI with drag-and-drop to design product structures, and Role-Based Access Control for platform security and governance.",
+      techStack: ["React", "TypeScript", "Ant Design", "SCSS", "CSS"],
+      featured: false,
+      status: "shipped",
     },
   ],
   skills: [
     {
       category: "Languages",
-      items: ["TypeScript", "JavaScript", "HTML", "CSS", "SQL"],
+      items: ["JavaScript", "TypeScript", "HTML", "CSS", "SASS", "Java", "Kotlin", "SQL"],
     },
     {
-      category: "Frameworks & Libraries",
-      items: ["React", "Next.js", "Node.js", "Tailwind CSS", "Radix UI", "Framer Motion"],
+      category: "Frontend Frameworks",
+      items: ["React", "Next.js"],
     },
     {
-      category: "Architecture & Tooling",
+      category: "State Management & Data",
+      items: ["Redux", "Zustand", "React Query", "GraphQL"],
+    },
+    {
+      category: "UI Libraries",
       items: [
-        "Design systems",
-        "Component APIs",
-        "Accessibility (WCAG)",
-        "Performance budgets",
-        "CI/CD",
-        "Storybook",
-        "Vitest / Jest",
-        "Vercel",
+        "Tailwind CSS",
+        "shadcn/ui",
+        "Radix UI",
+        "Ant Design",
+        "Material UI",
+        "Framer Motion",
       ],
     },
     {
-      category: "Practices",
+      category: "Backend & Cloud",
       items: [
-        "Technical mentoring",
-        "Code review",
-        "Product partnership",
-        "Agile delivery",
-        "Documentation",
+        "Node.js",
+        "Express.js",
+        "Firebase",
+        "Supabase",
+        "Convex",
+        "Spring Boot",
+      ],
+    },
+    {
+      category: "Mobile",
+      items: ["Android (Kotlin, Java, XML)", "Retrofit", "Dagger", "Glide"],
+    },
+    {
+      category: "Analytics & Quality",
+      items: [
+        "Firebase Crashlytics",
+        "Adjust SDK",
+        "SonarQube",
+        "Storybook",
+        "CI/CD",
       ],
     },
   ],
   education: [
     {
-      // TODO: replace with your institution
-      institution: "University of Example",
-      // TODO: replace with your qualification
-      qualification: "BSc Computer Science",
-      startYear: "2014",
-      endYear: "2017",
+      institution: "Staffordshire University (APIIT Sri Lanka)",
+      qualification: "Bachelor of Engineering with Honours in Software Engineering",
+      startYear: "",
+      endYear: "2022",
     },
   ],
   seo: {
-    // TODO: replace with your preferred page title
-    title: "Alex Morgan — Senior Software Engineer | React, Next.js, TypeScript",
+    title:
+      "Kanchana Walagambahu — Senior Software Engineer | React, Next.js, TypeScript",
     description:
-      "Curriculum Vitae and selected work of Alex Morgan, a Senior Software Engineer specialised in React, Next.js and TypeScript. Based in the United Kingdom.",
-    // TODO: replace with your Open Graph image path, e.g. "/og.png"
+      "Curriculum Vitae and selected work of Kanchana Walagambahu, a Senior Software Engineer specialised in React, Next.js and TypeScript. Based in Colombo, Sri Lanka.",
     ogImage: "/og.png",
-    // TODO: replace with your production site URL
-    siteUrl: "https://example.com",
+    // Set to your production portfolio URL when you deploy
+    siteUrl: undefined,
   },
 };
