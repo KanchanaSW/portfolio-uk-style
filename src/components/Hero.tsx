@@ -64,7 +64,7 @@ export function Hero() {
             </div>
 
             {siteConfig.showPhoto && siteConfig.photoUrl ? (
-              <div className="relative h-40 w-40 shrink-0 overflow-hidden rounded-sm border border-border sm:h-48 sm:w-48">
+              <div className="relative h-40 w-40 shrink-0 overflow-hidden rounded-full border border-border sm:h-48 sm:w-48">
                 <Image
                   src={siteConfig.photoUrl}
                   alt={`Portrait of ${siteConfig.name}`}
