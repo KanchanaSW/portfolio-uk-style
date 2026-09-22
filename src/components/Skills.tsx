@@ -16,11 +16,11 @@ export function Skills() {
           <div className="section-rule" aria-hidden />
         </FadeIn>
 
-        <div className="mt-10 grid gap-8 sm:grid-cols-2">
+        <div className="mt-10 grid gap-4 sm:grid-cols-2">
           {siteConfig.skills.map((group, index) => (
             <FadeIn key={group.category} delay={index * 0.04}>
-              <div>
-                <h3 className="text-sm font-medium uppercase tracking-wider text-accent">
+              <div className="h-full rounded-sm border border-border p-5 transition-colors hover:border-accent">
+                <h3 className="text-sm font-medium text-accent">
                   {group.category}
                 </h3>
                 <ul className="mt-3 flex flex-wrap gap-1.5" aria-label={group.category}>

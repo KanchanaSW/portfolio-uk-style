@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Newsreader, IBM_Plex_Sans, JetBrains_Mono } from "next/font/google";
 import { siteConfig } from "@config/site.config";
+import { themeInitScript } from "@/lib/theme";
 import "./globals.css";
 
 const newsreader = Newsreader({
@@ -61,10 +62,13 @@ export default function RootLayout({
       lang="en-GB"
       className={`${newsreader.variable} ${ibmPlexSans.variable} ${jetbrainsMono.variable}`}
     >
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: themeInitScript }} />
+      </head>
       <body className="min-h-screen bg-background font-sans text-foreground">
         <a
           href="#main"
-          className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-[100] focus:rounded-sm focus:bg-accent focus:px-3 focus:py-2 focus:text-sm focus:text-white no-print"
+          className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-[100] focus:rounded-sm focus:bg-accent focus:px-3 focus:py-2 focus:text-sm focus:text-[var(--accent-contrast)] no-print"
         >
           Skip to content
         </a>

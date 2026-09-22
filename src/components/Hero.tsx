@@ -1,12 +1,13 @@
 import Image from "next/image";
-import { Download, Mail, MapPin } from "lucide-react";
+import { Download, MapPin } from "lucide-react";
 import { siteConfig } from "@config/site.config";
 import { FadeIn } from "@/components/FadeIn";
+import { CopyEmailButton } from "@/components/CopyEmailButton";
 
 export function Hero() {
   return (
     <section id="top" aria-labelledby="hero-heading" className="border-b border-border">
-      <div className="section-shell py-16 sm:py-24 lg:py-28">
+      <div className="section-shell py-16 sm:py-20 lg:py-24">
         <FadeIn>
           <div
             className={
@@ -29,15 +30,23 @@ export function Hero() {
                 {siteConfig.tagline}
               </p>
 
-              <div className="mt-6 flex flex-col gap-2 text-sm text-muted sm:flex-row sm:items-center sm:gap-6">
-                <p className="inline-flex items-start gap-2">
-                  <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-accent" aria-hidden />
-                  <span>{siteConfig.location}</span>
-                </p>
-                <p className="sm:border-l sm:border-border sm:pl-6">
-                  {siteConfig.availability}
-                </p>
-              </div>
+              <ul
+                className="mt-6 flex flex-wrap gap-x-1 gap-y-2 text-sm text-muted"
+                aria-label="Key credentials"
+              >
+                <li className="inline-flex items-center rounded-sm border border-border bg-surface px-2.5 py-1">
+                  4+ years experience
+                </li>
+                <li className="inline-flex items-center rounded-sm border border-border bg-surface px-2.5 py-1">
+                  Axiata Digital Labs
+                </li>
+                <li className="inline-flex items-center gap-1.5 rounded-sm border border-border bg-surface px-2.5 py-1">
+                  <MapPin className="h-3.5 w-3.5 shrink-0 text-accent" aria-hidden />
+                  Colombo / Remote
+                </li>
+              </ul>
+
+              <p className="mt-4 text-sm text-muted">{siteConfig.availability}</p>
 
               <div className="mt-8 flex flex-wrap gap-3 no-print">
                 <a
@@ -50,10 +59,7 @@ export function Hero() {
                   <Download className="h-4 w-4" aria-hidden />
                   Download CV
                 </a>
-                <a href={`mailto:${siteConfig.email}`} className="btn-secondary">
-                  <Mail className="h-4 w-4" aria-hidden />
-                  Email me
-                </a>
+                <CopyEmailButton email={siteConfig.email} variant="button" />
               </div>
             </div>
 

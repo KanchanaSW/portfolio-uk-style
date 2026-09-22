@@ -11,21 +11,49 @@
   --accent: #1b4332;
   --accent-hover: #16382a;
   --accent-muted: #d8e6df;
+  --accent-contrast: #ffffff;
   --ring: #1b4332;
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root:not([data-theme="light"]) {
     --background: #121316;
     --foreground: #e4e4e7;
     --muted: #a1a1aa;
-    --border: #27272a;
+    --border: #2a2b30;
     --surface: #1a1b1f;
-    --accent: #4ade80;
-    --accent-hover: #86efac;
+    --accent: #34d399;
+    --accent-hover: #6ee7b7;
     --accent-muted: #1a2e24;
-    --ring: #4ade80;
+    --accent-contrast: #121316;
+    --ring: #34d399;
   }
+}
+
+html[data-theme="dark"] {
+  --background: #121316;
+  --foreground: #e4e4e7;
+  --muted: #a1a1aa;
+  --border: #2a2b30;
+  --surface: #1a1b1f;
+  --accent: #34d399;
+  --accent-hover: #6ee7b7;
+  --accent-muted: #1a2e24;
+  --accent-contrast: #121316;
+  --ring: #34d399;
+}
+
+html[data-theme="light"] {
+  --background: #fcfbf9;
+  --foreground: #1a1a1a;
+  --muted: #5c5c57;
+  --border: #e5e5e0;
+  --surface: #f4f3ef;
+  --accent: #1b4332;
+  --accent-hover: #16382a;
+  --accent-muted: #d8e6df;
+  --accent-contrast: #ffffff;
+  --ring: #1b4332;
 }
 
 @layer base {
@@ -73,17 +101,20 @@
   }
 
   .btn-primary {
-    @apply inline-flex items-center justify-center gap-2 rounded-sm bg-accent px-4 py-2.5 text-sm font-medium text-white transition-colors hover:bg-accent-hover;
+    @apply inline-flex items-center justify-center gap-2 rounded-sm bg-accent px-4 py-2.5 text-sm font-medium transition-colors hover:bg-accent-hover active:scale-[0.98];
+    color: var(--accent-contrast);
   }
 
   .btn-secondary {
-    @apply inline-flex items-center justify-center gap-2 rounded-sm border border-border bg-transparent px-4 py-2.5 text-sm font-medium text-foreground transition-colors hover:border-accent hover:text-accent;
+    @apply inline-flex items-center justify-center gap-2 rounded-sm border border-border bg-transparent px-4 py-2.5 text-sm font-medium text-foreground transition-colors hover:border-accent hover:text-accent active:scale-[0.98];
   }
-}
 
-@media (prefers-color-scheme: dark) {
-  .btn-primary {
-    color: #121316;
+  .status-badge {
+    @apply inline-flex items-center rounded-sm border px-2 py-0.5 text-[11px] font-medium uppercase tracking-wider;
+  }
+
+  .project-card {
+    @apply rounded-sm border border-border bg-background p-5 transition-colors hover:border-accent sm:p-6;
   }
 }
 

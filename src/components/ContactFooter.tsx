@@ -1,6 +1,7 @@
-import { Download, Mail } from "lucide-react";
+import { Download } from "lucide-react";
 import { siteConfig } from "@config/site.config";
 import { FadeIn } from "@/components/FadeIn";
+import { CopyEmailButton } from "@/components/CopyEmailButton";
 import { getIcon } from "@/lib/icons";
 
 export function ContactFooter() {
@@ -22,13 +23,7 @@ export function ContactFooter() {
 
         <div className="mt-8 flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
           <div className="space-y-3">
-            <a
-              href={`mailto:${siteConfig.email}`}
-              className="inline-flex items-center gap-2 text-base font-medium text-foreground transition-colors hover:text-accent"
-            >
-              <Mail className="h-4 w-4 text-accent" aria-hidden />
-              {siteConfig.email}
-            </a>
+            <CopyEmailButton email={siteConfig.email} />
 
             <ul className="flex flex-wrap gap-4 pt-1">
               {siteConfig.socialLinks.map((link) => {

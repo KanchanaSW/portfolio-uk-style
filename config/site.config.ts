@@ -15,6 +15,8 @@ export interface ExperienceEntry {
   techStack: string[];
 }
 
+export type ProjectCategory = "saas" | "opensource" | "product";
+
 export interface ProjectEntry {
   slug: string;
   title: string;
@@ -27,6 +29,8 @@ export interface ProjectEntry {
   imageUrl?: string; // path under /public/projects/
   featured: boolean; // controls homepage vs "more projects" placement
   status: "shipped" | "in-progress" | "concept";
+  /** Filter bucket for project tabs */
+  category: ProjectCategory;
 }
 
 export interface SkillCategory {
@@ -188,6 +192,7 @@ export const siteConfig: SiteConfig = {
       repoUrl: "https://github.com/KanchanaSW/Sri-Lankan-Stock-Analysis-App--AI-Assisted-",
       featured: true,
       status: "shipped",
+      category: "saas",
     },
     {
       slug: "mechanical-3d-keyboard",
@@ -209,6 +214,7 @@ export const siteConfig: SiteConfig = {
       repoUrl: "https://github.com/KanchanaSW/Mechanical-3D-site",
       featured: true,
       status: "shipped",
+      category: "opensource",
     },
     {
       slug: "tabletop-jigsaw",
@@ -231,6 +237,7 @@ export const siteConfig: SiteConfig = {
       repoUrl: "https://github.com/KanchanaSW/Jigsaw-puzzle",
       featured: true,
       status: "shipped",
+      category: "opensource",
     },
     {
       slug: "json-vibe",
@@ -252,6 +259,7 @@ export const siteConfig: SiteConfig = {
       liveUrl: "https://jsonshare.org",
       featured: true,
       status: "shipped",
+      category: "opensource",
     },
     {
       slug: "doodleui-react",
@@ -277,6 +285,7 @@ export const siteConfig: SiteConfig = {
       npmUrl: "https://www.npmjs.com/package/doodleui-react",
       featured: true,
       status: "shipped",
+      category: "opensource",
     },
     {
       slug: "wildwood-packiyo",
@@ -297,6 +306,7 @@ export const siteConfig: SiteConfig = {
       ],
       featured: true,
       status: "shipped",
+      category: "saas",
     },
     {
       slug: "serendib-gem-vault",
@@ -318,6 +328,7 @@ export const siteConfig: SiteConfig = {
       repoUrl: "https://github.com/KanchanaSW/gem-store",
       featured: false,
       status: "shipped",
+      category: "product",
     },
     {
       slug: "interview-prep-ai",
@@ -338,6 +349,7 @@ export const siteConfig: SiteConfig = {
       repoUrl: "https://github.com/KanchanaSW/AI-interview-question-generator",
       featured: false,
       status: "shipped",
+      category: "opensource",
     },
     {
       slug: "cheerfill",
@@ -357,6 +369,7 @@ export const siteConfig: SiteConfig = {
       repoUrl: "https://github.com/KanchanaSW/marketing-landing-page",
       featured: false,
       status: "shipped",
+      category: "saas",
     },
     {
       slug: "veloura-cake",
@@ -376,6 +389,7 @@ export const siteConfig: SiteConfig = {
       repoUrl: "https://github.com/KanchanaSW/cake-website",
       featured: false,
       status: "shipped",
+      category: "product",
     },
     {
       slug: "smartnas",
@@ -399,6 +413,7 @@ export const siteConfig: SiteConfig = {
       ],
       featured: false,
       status: "shipped",
+      category: "saas",
     },
     {
       slug: "smartnas-revamp",
@@ -416,6 +431,7 @@ export const siteConfig: SiteConfig = {
       ],
       featured: false,
       status: "shipped",
+      category: "saas",
     },
     {
       slug: "axonect-customer-explore",
@@ -427,6 +443,7 @@ export const siteConfig: SiteConfig = {
       techStack: ["React", "TypeScript", "Ant Design", "SCSS", "CSS"],
       featured: false,
       status: "shipped",
+      category: "saas",
     },
     {
       slug: "axonect-enterprise-product-catalog",
@@ -438,6 +455,7 @@ export const siteConfig: SiteConfig = {
       techStack: ["React", "TypeScript", "Ant Design", "SCSS", "CSS"],
       featured: false,
       status: "shipped",
+      category: "saas",
     },
   ],
   skills: [

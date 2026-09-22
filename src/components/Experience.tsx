@@ -17,12 +17,16 @@ export function Experience() {
           <div className="section-rule" aria-hidden />
         </FadeIn>
 
-        <ol className="relative mt-10 space-y-0 border-l border-border pl-0 sm:pl-0">
+        <ol className="relative mt-10 space-y-0 sm:border-l sm:border-border sm:pl-6">
           {siteConfig.experience.map((entry, index) => (
             <li key={`${entry.company}-${entry.startDate}`} className="relative">
               <FadeIn delay={index * 0.05}>
                 <article className="grid gap-4 border-b border-border py-8 last:border-b-0 sm:grid-cols-[11rem_1fr] sm:gap-8">
-                  <div className="text-sm text-muted">
+                  <div className="relative text-sm text-muted">
+                    <span
+                      aria-hidden
+                      className="absolute -left-[1.95rem] top-1.5 hidden h-2.5 w-2.5 rounded-full border-2 border-accent bg-background sm:block"
+                    />
                     <p className="font-medium text-foreground">
                       {formatDateRange(entry.startDate, entry.endDate)}
                     </p>

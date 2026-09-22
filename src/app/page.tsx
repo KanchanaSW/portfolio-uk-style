@@ -6,6 +6,7 @@ import { Projects } from "@/components/Projects";
 import { Skills } from "@/components/Skills";
 import { Education } from "@/components/Education";
 import { ContactFooter } from "@/components/ContactFooter";
+import { BackToTop } from "@/components/BackToTop";
 
 export default function HomePage() {
   return (
@@ -20,6 +21,7 @@ export default function HomePage() {
         <Education />
       </main>
       <ContactFooter />
+      <BackToTop />
     </>
   );
 }
