@@ -75,8 +75,8 @@ export const siteConfig: SiteConfig = {
   email: "sachithrakanchana.ks@gmail.com",
   phone: "+94771556815",
   cvUrl: "/Kanchana_Walagambahu.pdf",
-  photoUrl: undefined,
-  showPhoto: false,
+  photoUrl: "/profile_pic.jpg",
+  showPhoto: true,
   availability:
     "Open to senior frontend and tech-lead opportunities — remote or hybrid.",
   bio: [
