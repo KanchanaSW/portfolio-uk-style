@@ -74,7 +74,7 @@ export const siteConfig: SiteConfig = {
   location: "Colombo, Sri Lanka (Remote-friendly)",
   email: "sachithrakanchana.ks@gmail.com",
   phone: "+94771556815",
-  cvUrl: "/cv.pdf",
+  cvUrl: "/Kanchana_Walagambahu.pdf",
   photoUrl: undefined,
   showPhoto: false,
   availability:
@@ -168,6 +168,71 @@ export const siteConfig: SiteConfig = {
   ],
   projects: [
     {
+      slug: "sl-stocks-analysis",
+      title: "Sri Lankan Stock Analysis (AI-Assisted)",
+      description:
+        "Full-stack Colombo Stock Exchange (CSE) analytics platform evaluating equities across three investment horizons, powered by real-time data and Groq Llama 3.3 70B AI.",
+      longDescription:
+        "Tracks the top 50 profitable stocks on the CSE with live TradingView feeds, automated weekly scrapers, Convex reactive database, interactive Recharts visualization, and context-aware AI insights across 5-year buy-and-hold, stability, and short-term momentum tiers.",
+      techStack: [
+        "Next.js 14",
+        "React",
+        "TypeScript",
+        "Convex",
+        "Groq API (Llama 3.3)",
+        "Recharts",
+        "Tailwind CSS",
+        "Netlify",
+      ],
+      liveUrl: "https://slstocks.netlify.app/",
+      repoUrl: "https://github.com/KanchanaSW/Sri-Lankan-Stock-Analysis-App--AI-Assisted-",
+      featured: true,
+      status: "shipped",
+    },
+    {
+      slug: "mechanical-3d-keyboard",
+      title: "Mechanical — 3D Keyboard Teardown",
+      description:
+        "A scroll-driven 3D interactive teardown of a 60% mechanical keyboard, disassembling keycaps, switches, plate, PCB, and chassis in real-time.",
+      longDescription:
+        "Engineered with Three.js, GSAP ScrollTrigger, and Lenis smooth scrolling. Features dynamic canvas-rendered dual keycap legends, layer-by-layer exploded perspective views, chapter navigation, and hardware spec callouts.",
+      techStack: [
+        "Three.js",
+        "GSAP",
+        "ScrollTrigger",
+        "Lenis",
+        "JavaScript",
+        "HTML5 Canvas",
+        "Vite",
+      ],
+      liveUrl: "https://mechanical3dkeyboard.netlify.app/",
+      repoUrl: "https://github.com/KanchanaSW/Mechanical-3D-site",
+      featured: true,
+      status: "shipped",
+    },
+    {
+      slug: "tabletop-jigsaw",
+      title: "Tabletop Jigsaw",
+      description:
+        "Browser-based interactive jigsaw puzzle game featuring irregular tab-and-blank procedural piece generation, tactile snap physics, and curated Pexels photography.",
+      longDescription:
+        "Built with Next.js 14 App Router, @dnd-kit drag-and-drop, Zustand state management, and Framer Motion. Generates non-uniform interlocking cuts, scatter trays, peek-at-box ghost guides, elapsed timer tracking, and adaptive difficulty modes.",
+      techStack: [
+        "Next.js 14",
+        "React 18",
+        "TypeScript",
+        "@dnd-kit",
+        "Zustand",
+        "Framer Motion",
+        "Tailwind CSS",
+        "Vitest",
+      ],
+      liveUrl: "https://tabletopjigsaw.netlify.app/",
+      repoUrl: "https://github.com/KanchanaSW/Jigsaw-puzzle",
+      featured: true,
+      status: "shipped",
+    },
+    {
       slug: "json-vibe",
       title: "JSON Vibe",
       description:
@@ -231,6 +296,85 @@ export const siteConfig: SiteConfig = {
         "Framer Motion",
       ],
       featured: true,
+      status: "shipped",
+    },
+    {
+      slug: "serendib-gem-vault",
+      title: "Serendib Gem Vault",
+      description:
+        "Artisanal showcase and catalog for authentic Ceylon gemstones, designed with a hand-drawn rough aesthetic powered by doodleui-react.",
+      longDescription:
+        "Utilises doodleui-react (55+ sketch-styled components) with rough.js styling, featuring interactive monsoon harvest quota tracking, filterable loose and mounted gemstone catalog, bespoke lapidary inquiry flows, and Ceylon gemological lab sheet viewer.",
+      techStack: [
+        "React",
+        "TypeScript",
+        "Vite",
+        "doodleui-react",
+        "rough.js",
+        "Radix UI",
+        "Tailwind CSS",
+      ],
+      liveUrl: "https://sl-gem.netlify.app/",
+      repoUrl: "https://github.com/KanchanaSW/gem-store",
+      featured: false,
+      status: "shipped",
+    },
+    {
+      slug: "interview-prep-ai",
+      title: "AI Interview Question Generator",
+      description:
+        "Adaptive technical interview preparation platform with instant MCQ quizzes, background question generation, AI coaching, and resume-tailored mock sessions.",
+      longDescription:
+        "Provides multi-mode practice (MCQ Quiz, AI Interview Coach, Flashcards, and Resume-based mock interviews) across React, Next.js, JavaScript, TypeScript, and System Design with tiered difficulty levels and continuous background generation.",
+      techStack: [
+        "Next.js",
+        "React",
+        "TypeScript",
+        "Tailwind CSS",
+        "AI Integration",
+        "Netlify",
+      ],
+      liveUrl: "https://interviewprpz.netlify.app/",
+      repoUrl: "https://github.com/KanchanaSW/AI-interview-question-generator",
+      featured: false,
+      status: "shipped",
+    },
+    {
+      slug: "cheerfill",
+      title: "Cheerfill",
+      description:
+        "Vibrant SaaS marketing landing page for a customer delight platform, featuring playful micro-interactions, journey flows, and tiered pricing.",
+      longDescription:
+        "Designed with high-conversion landing page architecture: animated delight flow walkthroughs, mood-aware campaign breakdowns, customer smile dashboard previews, and responsive pricing tier selectors.",
+      techStack: [
+        "Next.js",
+        "React",
+        "TypeScript",
+        "Tailwind CSS",
+        "Netlify",
+      ],
+      liveUrl: "https://cheerfill-page.netlify.app/",
+      repoUrl: "https://github.com/KanchanaSW/marketing-landing-page",
+      featured: false,
+      status: "shipped",
+    },
+    {
+      slug: "veloura-cake",
+      title: "Veloura Cake",
+      description:
+        "Bespoke patisserie and artisanal cake boutique showcase featuring curated collections, flavor profiles, and custom event order inquiries.",
+      longDescription:
+        "Crafted with an elegant luxury editorial aesthetic, showcasing signature multi-tier cakes, seasonal patisserie menus, customer testimonials, and an interactive celebration inquiry flow.",
+      techStack: [
+        "React",
+        "TypeScript",
+        "Vite",
+        "Tailwind CSS",
+        "Netlify",
+      ],
+      liveUrl: "https://velouracake.netlify.app/",
+      repoUrl: "https://github.com/KanchanaSW/cake-website",
+      featured: false,
       status: "shipped",
     },
     {
@@ -310,14 +454,16 @@ export const siteConfig: SiteConfig = {
       items: ["Redux", "Zustand", "React Query", "GraphQL"],
     },
     {
-      category: "UI Libraries",
+      category: "UI & Animation",
       items: [
         "Tailwind CSS",
         "shadcn/ui",
         "Radix UI",
+        "Framer Motion",
+        "Three.js",
+        "GSAP",
         "Ant Design",
         "Material UI",
-        "Framer Motion",
       ],
     },
     {
